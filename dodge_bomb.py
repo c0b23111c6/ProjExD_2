@@ -85,7 +85,6 @@ def main():
             return  # ゲームオーバー        
         screen.blit(bg_img, [0, 0]) 
 
-
         key_lst = pg.key.get_pressed()
         sum_mv = [0, 0]
         for key, tpl in DELTA.items():
@@ -112,7 +111,6 @@ def main():
         pg.display.update()
         tmr += 1
         clock.tick(50)
-
 
 if __name__ == "__main__":
     pg.init()
